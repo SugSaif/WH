@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+    <style>
+
+        body {
+            font-family: sans-serif
+        }
+        table {
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        }
+
+        th, td {
+        text-align: left;
+        padding: 16px;
+        
+        }
+
+        tr:nth-child(even) {
+        background-color: #f2f2f2
+        }
+
+        #myInput {
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 80%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        }
+</style>
+</head>
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search hashtags (not case sensitive).." title="Type in a name">
+
+<table id="myTable">
+    <tr>
+      <th>Name </th>
+      <th>Type <button onclick="sortTable2(1)">Sort</button></th>
+      <th>Topics <button onclick="sortTable2(2)">Sort</button></th>
+    </tr>
+  <!-- inset here  -->
+
+      <tr>
+        <td><a href=' https://www.abc.net.au/radionational/live/' target='_blank'> ABC</a><br>
+          Australia's ABC Radio National stream</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.bbc.co.uk/sounds' target='_blank'> BBC</a><br>
+          BBC (you can access most BBC radio streams here)</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.cbc.ca/listen/live-radio?radio_one=ottawa&cbc_music=toronto' target='_blank'>
+            CBC</a><br>
+          Canada's CBC radio streams </td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a
+            href=' https://static1.squarespace.com/static/55852bb4e4b08c33d8cb4df7/t/5e8e37a0cd9b554048a309bb/1586378829541/COVID19-Final.mp3'
+            target='_blank'> Covid-19: Inflection Point in the Anthropocene Era and the Paradigm Shift of Jung's New
+            Age</a><br>
+          Jungian analyst, author, and ecopsychologist Dr. Dennis Merritt discusses the current Covid situation from the
+          perspective of Jungian psychology
+        </td>
+        <td>MP3 file</td>
+        <td>#COVID19 #Jung #Psychology</td>
+      </tr>
+      <tr>
+        <td><a href=' https://kpfa.org/listen-live/' target='_blank'> KPFA (Berkeley)</a><br>
+          listener-funded talk radio and music radio station located in Berkeley, California</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://kpfa.org/program/letters-and-politics/feed/' target='_blank'> Letters and Politics
+            Show</a><br>
+          Interviews and commentary</td>
+        <td>RSS feed</td>
+        <td>#Humanities #Politics #History</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.npr.org/2016/04/05/472557877/npr-program-stream' target='_blank'> NPR</a><br>
+          NPR Live Streams (you can access several different streams here)</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' http://ralphnaderradiohour.libsyn.com/rss' target='_blank'> Ralph Nader Hour</a><br>
+          Interviews and commentary</td>
+        <td>RSS feed</td>
+        <td>#Politics #History</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.wbai.org/listen-live/' target='_blank'> WBAI</a><br>
+          listener-supported radio station licensed to New York City</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.kpfk.org/player/' target='_blank'> KPFK </a><br>
+          Pacifica Radio owned listener sponsored radio in Los Angeles</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://kpft.org/listen/' target='_blank'> KPFT</a><br>
+          Listener-sponsored community radio station in Houston</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://wpfwfm.org/radio/listen-live/listen-live-other-players' target='_blank'> WPFW</a><br>
+          Listener-sponsored community radio station in Washington DC</td>
+        <td>live-stream</td>
+        <td>#Humanities #Politics #History #Music</td>
+      </tr>
+      <tr>
+        <td><a href=' https://www.rte.ie/radio/' target='_blank'> RTE</a><br>
+          Irish public radio's listening streams</td>
+        <td>live-stream</td>
+        <td>#Music #talk</td>
+      </tr>
+      <tr>
+        <td><a href=' https://trofire.com/' target='_blank'> Ring of Fire</a><br>
+          No livestream available, but the website features many programs with listening options; many of the hosts from
+          the defunct Air America network are here now</td>
+        <td>Website</td>
+        <td>#politics</td>
+      </tr>
+
+<!-- stop insert here -->
+</table>
+
+<script>
+
+
+function sortTable2(tableCol) {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[tableCol];
+      y = rows[i + 1].getElementsByTagName("TD")[tableCol];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
