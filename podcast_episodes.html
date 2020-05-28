@@ -1,47 +1,50 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Podcasts</title>
-    <style>
+  <title>Podcasts</title>
+  <style>
+    body {
+      font-family: sans-serif
+    }
 
-        body {
-            font-family: sans-serif
-        }
-        table {
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #ddd;
-        }
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
 
-        th, td {
-        text-align: left;
-        padding: 16px;
-        
-        }
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
 
-        tr:nth-child(even) {
-        background-color: #f2f2f2
-        }
+    }
 
-        #myInput {
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        width: 80%;
-        font-size: 16px;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #ddd;
-        margin-bottom: 12px;
-        }
-</style>
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+
+    #myInput {
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 80%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
+
 <body>
 
-<H2>Podcast episodes (click on episode name to fetch)</H2>
+  <H2>Podcast episodes (click on episode name to fetch)</H2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search hashtags (not case sensitive).." title="Type in a name">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search hashtags (not case sensitive).."
+    title="Type in a name">
 
-<table id="myTable">
+  <table id="myTable">
     <tr>
       <th>Episode Name </th>
       <th>Feed</th>
@@ -49,272 +52,521 @@
     </tr>
 
 
-<tr>
-<td><a href=' https://www.podomatic.com/podcasts/wethepodcast/episodes/2017-08-10T06_38_17-07_00' target='_blank'> George Lakoff with Keith Ellison</a><br>
-George Lakoff with Keith Ellison on frames, talking points, and training institutions (such as the Leadership Institute) that allow the Right to have success in the political arena through its use of language</td>
-<td>http://wethepodcast.podomatic.com/rss2.xml</td>
-<td>#Lakoff #podcast #language #LeadershipInstitute</td>
-</tr><tr>
-<td><a href=' https://shows.cadence13.com/podcast/hope-through-history/episodes/b076c2a6-219b-4059-b31c-02efc646abbf' target='_blank'> Hope Through History - Polio</a><br>
-Jon Meacham examines  the Polio epidemic (you can hear clips of FDR, Eisenhower and Salk)</td>
-<td>https://feeds.megaphone.fm/hope-through-history</td>
-<td>#history #historians #JonMeacham #HopeThroughHistory</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/mark-sedgwick-key-thinkers-of-the-radical-right-oxford-up-2019/' target='_blank'> Key Thinkers of the Radical Right</a><br>
-In his new book 'Key Thinkers of the Radical Right: Behind the New Threat to Liberal Democracy', Mark Sedgwick looks at the classic canon, at the most influential modern thinkers, and at a selection of emergent thinkers</td>
-<td>http://feeds.megaphone.fm/LIT7047417664</td>
-<td>#history #ultraright #europe #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/adam-h-domby-the-false-cause-fraud-fabrication-and-white-supremacy-in-confederate-memory-u-virginia-press-2020/' target='_blank'> The False Cause</a><br>
-Adam H. Domby, Assistant Professor of History at the University of Charleston, in "False Cause: Fraud, Fabrication, and White Supremacy in Confederate Memory" unravels a number of false threads connected to the Lost Cause ideology.</td>
-<td>http://feeds.megaphone.fm/LIT7047417664</td>
-<td>#civilWar #LostCause  #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/charles-j-holden-republican-populist-spiro-agnew-and-the-origins-of-donald-trumps-america-uva-press-2019/' target='_blank'> Spiro Agnew and the Origins of Donald Trump’s America</a><br>
- In 'Republican Populist: Spiro Agnew and the Origins of Donald Trump’s America', Charles J. Holden, Zach Messitte, and Jerald Podair present Agnew as a progenitor of the conservative populism associated  with America’s 45th president.</td>
-<td>http://feeds.megaphone.fm/LIT7047417664</td>
-<td>#SouthernStrategy #Agnew  #NewBooksNetwork #HCR5.7.20</td>
-</tr><tr>
-<td><a href=' https://podcasts.apple.com/us/podcast/episode-1-the-most-consequential-loser/id1166710265?i=1000376836021' target='_blank'> The Most Consequential Loser</a><br>
-Barry Goldwater, the conservative Republican senator from Arizona, lost the 1964 presidential election to Lyndon Johnson in one of great landslides of the 20th Century. At the time many thought Goldwater’s brand of fiery conservatism had been relegated to the dustbin of political history, but instead it became the foundation of the modern Republican Party – the party that won five of the next six presidential elections.</td>
-<td>https://feeds.buzzsprout.com/67259.rss</td>
-<td>#ultraright #Goldwater #movementConservatism</td>
-</tr><tr>
-<td><a href=' https://www.missinfopod.com/2018/11/13/episode-68-joe-mccarthy-and-the-second-red-scare/' target='_blank'> Joe McCarthy and the (Second) Red Scare</a><br>
-1950s America and the Communist Party USA, the HUAC,  and the Army-McCarthy Hearing</td>
-<td>https://www.missinfopod.com/feed/podcast</td>
-<td>#ultraright #McCarthy</td>
-</tr><tr>
-<td><a href=' https://podcasts.apple.com/us/podcast/episode-2-william-f-buckley-jr/id1367243636?i=1000411929339' target='_blank'> William F. Buckley</a><br>
-Impressions of America, a podcast on modern American history, presented by Simon, Tobi and Vaughn-- covering the changing political discourse since the 1950s. From the Cronkite years to Trump.</td>
-<td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
-<td>#ultraright #Buckley  #ImpressionsAmerica  #HCR5.7.20</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/matthew-mcmanus-the-rise-of-post-modern-conservatism-palgrave-macmillan-2020/' target='_blank'> Matthew McManus, "The Rise of Post-Modern Conservatism" </a><br>
-This is a genealogical analysis of this new form of conservative politics</td>
-<td>http://feeds.megaphone.fm/LIT7047417664</td>
-<td>#IntellectualDarkWeb  #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://www.prattlibrary.org/booksmedia/podcasts/index.aspx?id=7559' target='_blank'> Writers LIVE: Chris Hedges, America: The Farewell Tour</a><br>
-Chris Hedges provides a provocative examination of America in crisis, where unemployment, deindustrialization, and a bitter hopelessness and malaise have resulted in an epidemic of diseases of despair -- drug abuse, gambling, suicide, magical thinking, xenophobia, and a culture of sadism and hat</td>
-<td>https://www.prattlibrary.org/booksmedia/podcasts/rss.aspx</td>
-<td>#ChrisHedges </td>
-</tr><tr>
-<td><a href=' https://store.counterpunch.org/chris-hedges-episode-78/' target='_blank'> Chris Hedges on Counter Punch Radio</a><br>
-The nature of Trump’s regime, the fascist ideological and historical framework from which the politics emerges, and the seamless transition of Empire from one administration and party to the other</td>
-<td>https://store.counterpunch.org/feed/podcast/</td>
-<td>#ChrisHedges </td>
-</tr><tr>
-<td><a href=' https://www.steinershow.org/podcasts/dr-nancy-isenberg-white-trash-class-in-america/?fbclid=IwAR0a6Gw-6-NJiuFau4-y8DfKcjBn07Qiv4HCPBXqgsUpJzdCHOtV5H_D22Q' target='_blank'> White Trash & Class In America</a><br>
-Interview with historian and author Dr. Nancy Isenberg about her  book White Trash: The 400-Year Untold History of Class in America.</td>
-<td>https://www.steinershow.org/feed/podcast/</td>
-<td>#NancyIsenberg #historians</td>
-</tr><tr>
-<td><a href=' https://static1.squarespace.com/static/55852bb4e4b08c33d8cb4df7/t/5e8e37a0cd9b554048a309bb/1586378829541/COVID19-Final.mp3' target='_blank'> Covid-19: Inflection Point in the Anthropocene Era and the Paradigm Shift of Jung's New Age</a><br>
-Jungian analyst, author, and ecopsychologist Dr. Dennis Merritt discusses the current Covid situation from the perspective of Jungian psychology</td>
-<td>https://speakingofjung.squarespace.com/podcast?format=rss</td>
-<td>#COVID19  #Jung  #Psychology</td>
-</tr><tr>
-<td><a href=' https://benfranklinsworld.com/episode-042-heather-cox-richardson-a-history-of-the-republican-party/' target='_blank'> A History of the Republican Party</a><br>
-Heather Cox Richardson's book "To Make Men Free" discussed</td>
-<td>https://podcasts.apple.com/us/podcast/ben-franklins-world-a-podcast-about-early-american-history/id946895107?mt=2</td>
-<td>#History  #HeatherCoxRichardson</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/heather-cox-richardson-wounded-knee-party-politics-and-the-road-to-an-american-massacre/' target='_blank'> Party Politics and the Road to an American Massacre</a><br>
-2010 epsode with Heather Cox Richardson on her book "Wounded Knee"</td>
-<td>https://newbooksnetwork.com/category/native-american-studies/</td>
-<td> #HeatherCoxRichardson #History</td>
-</tr><tr>
-<td><a href=' https://mysummerlair.podbean.com/e/anne-nelson-shadow-network' target='_blank'> Shadow Network</a><br>
-Anne Nelson discusses right-wing networks on this podcast</td>
-<td>https://feed.podbean.com/mysummerlair/feed.xml</td>
-<td>#ultraright #mySummerLair</td>
-</tr><tr>
-<td><a href=' https://anchor.fm/impressions-of-america/episodes/Episode-4---The-Liberal-Consensus---with-Kevin-Schultz-e1t4lp' target='_blank'> The Liberal Consensus</a><br>
-This podcast discusses the “liberal consensus”; how it developed, some of its intrinsic flaws, and the right-wing reaction to it.</td>
-<td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
-<td>#Buckley #Mailer #liberalConsensus #ImpressionsAmerica  #HCR5.7.20</td>
-</tr><tr>
-<td><a href=' https://welfareafterbeveridge.wordpress.com/' target='_blank'> Welfare After Beveridge</a><br>
-William Beveridge in 1942 devised at the London School of Economics the outlines for the welfare state.  Dr. Richard Sennett gave four talks at the LSE on how to imagine welfare in today’s society, which can be accessed here</td>
-<td>http://www.lse.ac.uk/assets/richmedia/webFeeds/publicLecturesAndEvents_iTunesStore.xml</td>
-<td>#LSE #welfare #Beveridge</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/walter-nugent-color-coded-party-politics-in-the-american-west-1950-2016-u-oklahoma-press-2018/' target='_blank'> Party Politics in the American West, 1950–2016</a><br>
-Walter Nugent, professor emeritus of history at the University of Notre Dame provides a detailed analysis of each Western state’s modern political history.  He discusses nineteen states, divided as indicated in the table of contents of his recent <a href="https://i.imgur.com/tEEPTyE.png">book</a>  on the subject. </td>
-<td>https://feeds.megaphone.fm/LIT3997202566</td>
-<td>#NewBooksNetwork #history #AmericanWest</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/matthew-mcmanus-and-marion-trejo-myth-and-mayhem-a-leftist-critique-of-jordan-peterson%E2%80%8B-zero-books-2020/' target='_blank'>  Myth and Mayhem, A Leftist Critique of Jordan Peterson</a><br>
- Matthew McManus and Marion Trejo discuss Jordan Peterson</td>
-<td> https://feeds.megaphone.fm/LIT8251633117</td>
-<td>#intellectualDarkWeb  #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://www.podomatic.com/podcasts/dietsoap/episodes/2020-04-06T09_01_52-07_00' target='_blank'>  Zero Squared #233: Critiquing Jordan Peterson</a><br>
- Marion Trejo and Matthew McManus discuss their  book "Myth and Mayhem: A Leftist Critique of Jordan Peterson" on the Zero Squared podcast</td>
-<td> https://podcasts.apple.com/us/podcast/zero-squared/id312640499</td>
-<td>#IntellectualDarkWeb  #ZeroSquared</td>
-</tr><tr>
-<td><a href=' https://currentaffairs.simplecast.com/episodes/unlocked-ben-burgis-on-logic-and-arguments' target='_blank'> Ben Burgis on Logic and Arguments</a><br>
- Burgis goes on the Current Affairs podcast to discuss his book 'Give Them An Argument: Logic for the Left.'</td>
-<td>https://feeds.simplecast.com/6HSzsHPR</td>
-<td>#IntellectualDarkWeb  #CurrentAffairs</td>
-</tr><tr>
-<td><a href=' https://kpfa.org/episode/letters-and-politics-may-11-2020/' target='_blank'> Theodore Roosevelt and the Battle to Transform Capitalism in America</a><br>
-Susan Berfield, award-winning investigative reporter for Bloomberg Businessweek and Bloomberg News discusses her book 'The Hour of Fate: Theodore Roosevelt, J.P. Morgan, and the Battle to Transform American Capitalism.'</td>
-<td>https://kpfa.org/program/letters-and-politics/feed/</td>
-<td>#LettersPolitics #Troosevelt</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/kenesha-n-grant-the-great-migration-and-the-democratic-party-temple-up-2020/' target='_blank'> The Great Migration and The Democratic Party</a><br>
-<a href="https://www.keneshiagrant.com">Keneshia Grant</a> discusses her 
-new 
-<a href="https://www.google.com/amp/s/newbooksnetwork.com/kenesha-n-grant-the-great-migration-and-the-democratic-party-temple-up-2020/amp/">book</a> about black migrations 
-to Northern cities in the 20th century, also depicted by artist <a href="https://lawrencemigration.phillipscollection.org/the-migration-series">Jacob Lawrence</a>, and 
-which played a big part in the new political alignments in the democratic party, as described in the 
-<a href="https://www.trumanlibrary.gov/library/research-files/memo-clark-clifford-harry-s-truman">Clifford memo</a>
+    <tr>
+      <td><a href=' https://www.podomatic.com/podcasts/wethepodcast/episodes/2017-08-10T06_38_17-07_00' target='_blank'>
+          George Lakoff with Keith Ellison</a><br>
+        George Lakoff with Keith Ellison on frames, talking points, and training institutions (such as the Leadership
+        Institute) that allow the Right to have success in the political arena through its use of language</td>
+      <td>http://wethepodcast.podomatic.com/rss2.xml</td>
+      <td>#Lakoff #podcast #language #LeadershipInstitute</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://shows.cadence13.com/podcast/hope-through-history/episodes/b076c2a6-219b-4059-b31c-02efc646abbf'
+          target='_blank'> Hope Through History - Polio</a><br>
+        Jon Meacham examines the Polio epidemic (you can hear clips of FDR, Eisenhower and Salk)</td>
+      <td>https://feeds.megaphone.fm/hope-through-history</td>
+      <td>#history #historians #JonMeacham #HopeThroughHistory</td>
+    </tr>
+    <tr>
+      <td><a href=' https://newbooksnetwork.com/mark-sedgwick-key-thinkers-of-the-radical-right-oxford-up-2019/'
+          target='_blank'> Key Thinkers of the Radical Right</a><br>
+        In his new book 'Key Thinkers of the Radical Right: Behind the New Threat to Liberal Democracy', Mark Sedgwick
+        looks at the classic canon, at the most influential modern thinkers, and at a selection of emergent thinkers
+      </td>
+      <td>http://feeds.megaphone.fm/LIT7047417664</td>
+      <td>#history #ultraright #europe #NewBooksNetwork</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/adam-h-domby-the-false-cause-fraud-fabrication-and-white-supremacy-in-confederate-memory-u-virginia-press-2020/'
+          target='_blank'> The False Cause</a><br>
+        Adam H. Domby, Assistant Professor of History at the University of Charleston, in "False Cause: Fraud,
+        Fabrication, and White Supremacy in Confederate Memory" unravels a number of false threads connected to the Lost
+        Cause ideology.</td>
+      <td>http://feeds.megaphone.fm/LIT7047417664</td>
+      <td>#civilWar #LostCause #NewBooksNetwork</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/charles-j-holden-republican-populist-spiro-agnew-and-the-origins-of-donald-trumps-america-uva-press-2019/'
+          target='_blank'> Spiro Agnew and the Origins of Donald Trump’s America</a><br>
+        In 'Republican Populist: Spiro Agnew and the Origins of Donald Trump’s America', Charles J. Holden, Zach
+        Messitte, and Jerald Podair present Agnew as a progenitor of the conservative populism associated with America’s
+        45th president.</td>
+      <td>http://feeds.megaphone.fm/LIT7047417664</td>
+      <td>#SouthernStrategy #Agnew #NewBooksNetwork #HCR5.7.20</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://podcasts.apple.com/us/podcast/episode-1-the-most-consequential-loser/id1166710265?i=1000376836021'
+          target='_blank'> The Most Consequential Loser</a><br>
+        Barry Goldwater, the conservative Republican senator from Arizona, lost the 1964 presidential election to Lyndon
+        Johnson in one of great landslides of the 20th Century. At the time many thought Goldwater’s brand of fiery
+        conservatism had been relegated to the dustbin of political history, but instead it became the foundation of the
+        modern Republican Party – the party that won five of the next six presidential elections.</td>
+      <td>https://feeds.buzzsprout.com/67259.rss</td>
+      <td>#ultraright #Goldwater #movementConservatism</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.missinfopod.com/2018/11/13/episode-68-joe-mccarthy-and-the-second-red-scare/'
+          target='_blank'> Joe McCarthy and the (Second) Red Scare</a><br>
+        1950s America and the Communist Party USA, the HUAC, and the Army-McCarthy Hearing</td>
+      <td>https://www.missinfopod.com/feed/podcast</td>
+      <td>#ultraright #McCarthy</td>
+    </tr>
+    <tr>
+      <td><a href=' https://podcasts.apple.com/us/podcast/episode-2-william-f-buckley-jr/id1367243636?i=1000411929339'
+          target='_blank'> William F. Buckley</a><br>
+        Impressions of America, a podcast on modern American history, presented by Simon, Tobi and Vaughn-- covering the
+        changing political discourse since the 1950s. From the Cronkite years to Trump.</td>
+      <td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
+      <td>#ultraright #Buckley #ImpressionsAmerica #HCR5.7.20</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/matthew-mcmanus-the-rise-of-post-modern-conservatism-palgrave-macmillan-2020/'
+          target='_blank'> Matthew McManus, "The Rise of Post-Modern Conservatism" </a><br>
+        This is a genealogical analysis of this new form of conservative politics</td>
+      <td>http://feeds.megaphone.fm/LIT7047417664</td>
+      <td>#IntellectualDarkWeb #NewBooksNetwork</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.prattlibrary.org/booksmedia/podcasts/index.aspx?id=7559' target='_blank'> Writers LIVE:
+          Chris Hedges, America: The Farewell Tour</a><br>
+        Chris Hedges provides a provocative examination of America in crisis, where unemployment, deindustrialization,
+        and a bitter hopelessness and malaise have resulted in an epidemic of diseases of despair -- drug abuse,
+        gambling, suicide, magical thinking, xenophobia, and a culture of sadism and hat</td>
+      <td>https://www.prattlibrary.org/booksmedia/podcasts/rss.aspx</td>
+      <td>#ChrisHedges </td>
+    </tr>
+    <tr>
+      <td><a href=' https://store.counterpunch.org/chris-hedges-episode-78/' target='_blank'> Chris Hedges on Counter
+          Punch Radio</a><br>
+        The nature of Trump’s regime, the fascist ideological and historical framework from which the politics emerges,
+        and the seamless transition of Empire from one administration and party to the other</td>
+      <td>https://store.counterpunch.org/feed/podcast/</td>
+      <td>#ChrisHedges </td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://www.steinershow.org/podcasts/dr-nancy-isenberg-white-trash-class-in-america/?fbclid=IwAR0a6Gw-6-NJiuFau4-y8DfKcjBn07Qiv4HCPBXqgsUpJzdCHOtV5H_D22Q'
+          target='_blank'> White Trash & Class In America</a><br>
+        Interview with historian and author Dr. Nancy Isenberg about her book White Trash: The 400-Year Untold History
+        of Class in America.</td>
+      <td>https://www.steinershow.org/feed/podcast/</td>
+      <td>#NancyIsenberg #historians</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://static1.squarespace.com/static/55852bb4e4b08c33d8cb4df7/t/5e8e37a0cd9b554048a309bb/1586378829541/COVID19-Final.mp3'
+          target='_blank'> Covid-19: Inflection Point in the Anthropocene Era and the Paradigm Shift of Jung's New
+          Age</a><br>
+        Jungian analyst, author, and ecopsychologist Dr. Dennis Merritt discusses the current Covid situation from the
+        perspective of Jungian psychology</td>
+      <td>https://speakingofjung.squarespace.com/podcast?format=rss</td>
+      <td>#COVID19 #Jung #Psychology</td>
+    </tr>
+    <tr>
+      <td><a href=' https://benfranklinsworld.com/episode-042-heather-cox-richardson-a-history-of-the-republican-party/'
+          target='_blank'> A History of the Republican Party</a><br>
+        Heather Cox Richardson's book "To Make Men Free" discussed</td>
+      <td>
+        https://podcasts.apple.com/us/podcast/ben-franklins-world-a-podcast-about-early-american-history/id946895107?mt=2
+      </td>
+      <td>#History #HeatherCoxRichardson</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/heather-cox-richardson-wounded-knee-party-politics-and-the-road-to-an-american-massacre/'
+          target='_blank'> Party Politics and the Road to an American Massacre</a><br>
+        2010 epsode with Heather Cox Richardson on her book "Wounded Knee"</td>
+      <td>https://newbooksnetwork.com/category/native-american-studies/</td>
+      <td> #HeatherCoxRichardson #History</td>
+    </tr>
+    <tr>
+      <td><a href=' https://mysummerlair.podbean.com/e/anne-nelson-shadow-network' target='_blank'> Shadow
+          Network</a><br>
+        Anne Nelson discusses right-wing networks on this podcast</td>
+      <td>https://feed.podbean.com/mysummerlair/feed.xml</td>
+      <td>#ultraright #mySummerLair</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://anchor.fm/impressions-of-america/episodes/Episode-4---The-Liberal-Consensus---with-Kevin-Schultz-e1t4lp'
+          target='_blank'> The Liberal Consensus</a><br>
+        This podcast discusses the “liberal consensus”; how it developed, some of its intrinsic flaws, and the
+        right-wing reaction to it.</td>
+      <td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
+      <td>#Buckley #Mailer #liberalConsensus #ImpressionsAmerica #HCR5.7.20</td>
+    </tr>
+    <tr>
+      <td><a href=' https://welfareafterbeveridge.wordpress.com/' target='_blank'> Welfare After Beveridge</a><br>
+        William Beveridge in 1942 devised at the London School of Economics the outlines for the welfare state. Dr.
+        Richard Sennett gave four talks at the LSE on how to imagine welfare in today’s society, which can be accessed
+        here</td>
+      <td>http://www.lse.ac.uk/assets/richmedia/webFeeds/publicLecturesAndEvents_iTunesStore.xml</td>
+      <td>#LSE #welfare #Beveridge</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/walter-nugent-color-coded-party-politics-in-the-american-west-1950-2016-u-oklahoma-press-2018/'
+          target='_blank'> Party Politics in the American West, 1950–2016</a><br>
+        Walter Nugent, professor emeritus of history at the University of Notre Dame provides a detailed analysis of
+        each Western state’s modern political history. He discusses nineteen states, divided as indicated in the table
+        of contents of his recent <a href="https://i.imgur.com/tEEPTyE.png">book</a> on the subject. </td>
+      <td>https://feeds.megaphone.fm/LIT3997202566</td>
+      <td>#NewBooksNetwork #history #AmericanWest</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/matthew-mcmanus-and-marion-trejo-myth-and-mayhem-a-leftist-critique-of-jordan-peterson%E2%80%8B-zero-books-2020/'
+          target='_blank'> Myth and Mayhem, A Leftist Critique of Jordan Peterson</a><br>
+        Matthew McManus and Marion Trejo discuss Jordan Peterson</td>
+      <td> https://feeds.megaphone.fm/LIT8251633117</td>
+      <td>#intellectualDarkWeb #NewBooksNetwork</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.podomatic.com/podcasts/dietsoap/episodes/2020-04-06T09_01_52-07_00' target='_blank'>
+          Zero Squared #233: Critiquing Jordan Peterson</a><br>
+        Marion Trejo and Matthew McManus discuss their book "Myth and Mayhem: A Leftist Critique of Jordan Peterson" on
+        the Zero Squared podcast</td>
+      <td> https://podcasts.apple.com/us/podcast/zero-squared/id312640499</td>
+      <td>#IntellectualDarkWeb #ZeroSquared</td>
+    </tr>
+    <tr>
+      <td><a href=' https://currentaffairs.simplecast.com/episodes/unlocked-ben-burgis-on-logic-and-arguments'
+          target='_blank'> Ben Burgis on Logic and Arguments</a><br>
+        Burgis goes on the Current Affairs podcast to discuss his book 'Give Them An Argument: Logic for the Left.'</td>
+      <td>https://feeds.simplecast.com/6HSzsHPR</td>
+      <td>#IntellectualDarkWeb #CurrentAffairs</td>
+    </tr>
+    <tr>
+      <td><a href=' https://kpfa.org/episode/letters-and-politics-may-11-2020/' target='_blank'> Theodore Roosevelt and
+          the Battle to Transform Capitalism in America</a><br>
+        Susan Berfield, award-winning investigative reporter for Bloomberg Businessweek and Bloomberg News discusses her
+        book 'The Hour of Fate: Theodore Roosevelt, J.P. Morgan, and the Battle to Transform American Capitalism.'</td>
+      <td>https://kpfa.org/program/letters-and-politics/feed/</td>
+      <td>#LettersPolitics #Troosevelt</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/kenesha-n-grant-the-great-migration-and-the-democratic-party-temple-up-2020/'
+          target='_blank'> The Great Migration and The Democratic Party</a><br>
+        <a href="https://www.keneshiagrant.com">Keneshia Grant</a> discusses her
+        new
+        <a
+          href="https://www.google.com/amp/s/newbooksnetwork.com/kenesha-n-grant-the-great-migration-and-the-democratic-party-temple-up-2020/amp/">book</a>
+        about black migrations
+        to Northern cities in the 20th century, also depicted by artist <a
+          href="https://lawrencemigration.phillipscollection.org/the-migration-series">Jacob Lawrence</a>, and
+        which played a big part in the new political alignments in the democratic party, as described in the
+        <a href="https://www.trumanlibrary.gov/library/research-files/memo-clark-clifford-harry-s-truman">Clifford
+          memo</a>
 
-</td>
-<td>https://newbooksnetwork.com/category/political-science/</td>
-<td>#BlackPolitics #NewBooksNetwork  #HCR5.7.20</td>
-</tr><tr>
-<td><a href=' https://www.stitcher.com/podcast/impressions-of-america-history-podcast/e/55865081' target='_blank'> The New Left</a><br>
-Impressions of America is a podcast that started in 2018, and focuses on deep dives into specific topics in recent U.S. history. In this episode, featuring an interview with Douglas Rossinow, the "New Left" (whose focus was on narratives and manifestations of white supremacy and American imperialism) is covered. Rossinow has a sensibility and knowledge about leftist movements in the US, particularly in the 20th century. The discussion gets into the origins of the New Left in the mid-20th century, to its demise by 1972, and its relationships with black power movements, with intellectual liberals (such as John Kenneth Galbraith and Arthur Schlesinger Jr), and with counterculturists (the so-called ‘hippies’ and the ‘merry pranksters’ who often considered the New Left ‘politicos’ unauthentic), including periods of conflict and those of rapprochement. Several interesting figures come up such as Ken Kesey, Thomas Wolfe, Paul Tillich , and Dietrich Bonhoeffer. Rossinow claims that mass support for figures such as Reagan and Nixon, while abetted by an antipathy to the New Left, was primarily driven by an opposition of significant segments of white society to civil rights legislation and by alienation caused by perceived threats from the emerging liberal agenda as exemplified by Johnson’s 'Great Society'. </td>
-<td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
-<td>#NewLeft #ImpressionsAmerica  #HCR5.7.20</td>
-</tr><tr>
-<td><a href=' https://knowthyself.libsyn.com/know-thyself-44-the-terror-of-history-witch-trials-with-teofilo-ruiz' target='_blank'> Know Thyself 44: The Terror of History: Witch Trials with Teofilo Ruiz</a><br>
-National Humanities Medal Award Winner, Author, Revolutionary, Historian Professor Teofilo Ruiz explains how the witch persecutions began, what they consisted of, why they stopped, and what it means for humanity.</td>
-<td>http://knowthyself.libsyn.com/rss</td>
-<td>#TeoRuiz #HistoryHuman</td>
-</tr><tr>
-<td><a href=' https://blogs.lse.ac.uk/theforum/fanonpoliticalactivism/' target='_blank'> Frantz Fanon and Political Activism</a><br>
-A revolutionary thinker who drew upon influences from philosophy, political theory, and psychoanalysis, Fanon is best known for his fierce championing of Algerian liberation and his reflections on the psychological impact of colonialism and imperialism</td>
-<td>http://feeds.feedburner.com/ac/ERKS</td>
-<td>#Fanon #ForumPhilosophy</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/danny-haiphong-american-exceptionalism-and-american-innocence-skyhorse-2019/' target='_blank'> American Exceptionalism and American Innocence</a><br>
-According to Robert Sirvent and Danny Haiphong, Americans have been exposed to fake news throughout our history—news that slavery is a thing of the past, that we don’t live on stolen land, that wars are fought to spread freedom and democracy, that a rising tide lifts all boats, that prisons keep us safe, and that the police serve and protect.</td>
-<td>https://newbooksnetwork.com/category/american-studies/page/2/</td>
-<td>#FakeNews #AmericanExceptionalism #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/christopher-tomlins-in-the-matter-of-nat-turner-a-speculative-history-princeton-up-2020/' target='_blank'> In the Matter of Nat Turner
+      </td>
+      <td>https://newbooksnetwork.com/category/political-science/</td>
+      <td>#BlackPolitics #NewBooksNetwork #HCR5.7.20</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.stitcher.com/podcast/impressions-of-america-history-podcast/e/55865081' target='_blank'>
+          The New Left</a><br>
+        Impressions of America is a podcast that started in 2018, and focuses on deep dives into specific topics in
+        recent U.S. history. In this episode, featuring an interview with Douglas Rossinow, the "New Left" (whose focus
+        was on narratives and manifestations of white supremacy and American imperialism) is covered. Rossinow has a
+        sensibility and knowledge about leftist movements in the US, particularly in the 20th century. The discussion
+        gets into the origins of the New Left in the mid-20th century, to its demise by 1972, and its relationships with
+        black power movements, with intellectual liberals (such as John Kenneth Galbraith and Arthur Schlesinger Jr),
+        and with counterculturists (the so-called ‘hippies’ and the ‘merry pranksters’ who often considered the New Left
+        ‘politicos’ unauthentic), including periods of conflict and those of rapprochement. Several interesting figures
+        come up such as Ken Kesey, Thomas Wolfe, Paul Tillich , and Dietrich Bonhoeffer. Rossinow claims that mass
+        support for figures such as Reagan and Nixon, while abetted by an antipathy to the New Left, was primarily
+        driven by an opposition of significant segments of white society to civil rights legislation and by alienation
+        caused by perceived threats from the emerging liberal agenda as exemplified by Johnson’s 'Great Society'. </td>
+      <td>https://anchor.fm/s/2d1dc7c/podcast/rss</td>
+      <td>#NewLeft #ImpressionsAmerica #HCR5.7.20</td>
+    </tr>
+    <tr>
+      <td><a href=' https://knowthyself.libsyn.com/know-thyself-44-the-terror-of-history-witch-trials-with-teofilo-ruiz'
+          target='_blank'> Know Thyself 44: The Terror of History: Witch Trials with Teofilo Ruiz</a><br>
+        National Humanities Medal Award Winner, Author, Revolutionary, Historian Professor Teofilo Ruiz explains how the
+        witch persecutions began, what they consisted of, why they stopped, and what it means for humanity.</td>
+      <td>http://knowthyself.libsyn.com/rss</td>
+      <td>#TeoRuiz #HistoryHuman</td>
+    </tr>
+    <tr>
+      <td><a href=' https://blogs.lse.ac.uk/theforum/fanonpoliticalactivism/' target='_blank'> Frantz Fanon and
+          Political Activism</a><br>
+        A revolutionary thinker who drew upon influences from philosophy, political theory, and psychoanalysis, Fanon is
+        best known for his fierce championing of Algerian liberation and his reflections on the psychological impact of
+        colonialism and imperialism</td>
+      <td>http://feeds.feedburner.com/ac/ERKS</td>
+      <td>#Fanon #ForumPhilosophy</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/danny-haiphong-american-exceptionalism-and-american-innocence-skyhorse-2019/'
+          target='_blank'> American Exceptionalism and American Innocence</a><br>
+        According to Robert Sirvent and Danny Haiphong, Americans have been exposed to fake news throughout our
+        history—news that slavery is a thing of the past, that we don’t live on stolen land, that wars are fought to
+        spread freedom and democracy, that a rising tide lifts all boats, that prisons keep us safe, and that the police
+        serve and protect.</td>
+      <td>https://newbooksnetwork.com/category/american-studies/page/2/</td>
+      <td>#FakeNews #AmericanExceptionalism #NewBooksNetwork</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/christopher-tomlins-in-the-matter-of-nat-turner-a-speculative-history-princeton-up-2020/'
+          target='_blank'> In the Matter of Nat Turner
 
-</a><br>
-Christopher Tomlins' book 'In the Matter of Nat Turner' is  a unique speculation about the meaning and uses of history itself.</td>
-<td>https://newbooksnetwork.com/category/american-south/</td>
-<td>#AmericanSouth #NewBooksNetwork</td>
-</tr><tr>
-<td><a href=' https://thedrunkenodyssey.com/2020/05/02/episode-418-a-discussion-of-joseph-campbells-the-hero-with-a-thousand-faces-with-vanessa-blakeslee/' target='_blank'>  Discussion of Joseph Campbell’s The Hero with a Thousand Faces</a><br>
-Discussion on the classic of comparative mythology</td>
-<td></td>
-<td></td>
-</tr><tr>
-<td><a href=' https://newbooksnetwork.com/megan-kate-nelson-the-three-cornered-war-the-union-the-confederacy-and-native-peoples-in-the-fight-for-the-west-scribner-2019/' target='_blank'> The Union, the Confederacy, and Native Peoples in the Fight for the West</a><br>
-In The 'Three-Cornered War', Megan Kate Nelson combines meticulous research in military records, letters and diaries, oral histories, and photographs with novel-like prose to tell the story of the American Civil War through the experiences of nine individuals</td>
-<td>http://newbooksnetwork.com/category/native-american-studies/</td>
-<td>#NativeAmericanStudies #NewBooksNetwork #HCR4.9.20</td>
-</tr><tr>
-<td><a href=' https://entitledopinions.stanford.edu/railroad-kai-carlson-wee' target='_blank'> On the railroad with Kai Carlson-Wee </a><br>
-This is one of a three-part series of episodes featuring a discussion of journey or 'road' literature ('The Road', 'Lolita', 'Jesus' son), movies ('Badlands', 'Easy Rider', 'Thelma and Louise) and photography (e.g. Robert Frank) </td>
-<td>http://web.stanford.edu/dept/fren-ital/opinions/podcast/opinions.xml</td>
-<td>#EntitledOpinions #Road</td>
-</tr><tr>
-<td><a href=' https://www.bbc.co.uk/programmes/p003hycq' target='_blank'> Chaucer</a><br>
-Melvyn Bragg discusses Geoffrey Chaucer who immortalised the medieval pilgrimage and the diversity of 14th century English society, in his Canterbury Tales.</td>
-<td>https://www.bbc.co.uk/programmes/articles/598SVYJ2smP8qJlpH29y7Vj/podcasts</td>
-<td>#InOurTime #Chaucer #CanterburyTales</td>
-</tr><tr>
-<td><a href=' http://jsr.fsu.edu/new-media/podcast/joshua-rothman.html' target='_blank'> Flush times in the age of Jackson</a><br>
-In this podcast, Art Remillard speaks with Joshua Rothman about his new book Flush Times and Fever Dreams: A Story of Capitalism and Slavery in the Age of Jackson</td>
-<td>http://feeds.feedburner.com/JSR-podcast</td>
-<td>#JournalSouthernReligion #Jackson #JoshuaRothman</td>
-</tr><tr>
-<td><a href=' http://jsr.fsu.edu/new-media/podcast/perspectives.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+JSR-podcast+%28The+Journal+of+Southern+Religion+Podcast%29&utm_content=FeedBurner' target='_blank'> Southern Evangelicals and the Culture of the New South</a><br>
-Interviews with several authors on the subject</td>
-<td>http://feeds.feedburner.com/JSR-podcast</td>
-<td>#JournalSouthernReligion #Evangelicalism #HCR5.21.20</td>
-</tr><tr>
-<td><a href=' http://jsr.fsu.edu/new-media/podcast/tracy-thompson.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+JSR-podcast+%28The+Journal+of+Southern+Religion+Podcast%29&utm_content=FeedBurner' target='_blank'> New Mind of the South</a><br>
-In this podcast, Art Remillard talks with Tracy Thompson about her recent book, The New Mind of the South.  Thompson begins our conversation by explain how her book is similar to, and unique from, Wilber J. Cash’s 1941 classic, The Mind of the South.</td>
-<td>http://feeds.feedburner.com/JSR-podcast</td>
-<td>#JournalSouthernReligion #South</td>
-</tr><tr>
-<td><a href=' https://theageofjacksonpodcast.com/episode-6-eugene-genoveses-roll-jordan-roll-with-joshua-d-rothman-history-of-history-2/' target='_blank'> Eugene Genovese's 'Roll, Jordan, Roll'</a><br>
-When Roll, Jordan, Roll: The World the Slaves Made was published in 1974, the study of American slavery would change forever. Written by Eugene D. Genovese, an often controversial figure, the book would become as controversial as its author.  This podcast discusses the legacy of Genovese</td>
-<td>https://theageofjacksonpodcast.com/full-episode-list/</td>
-<td>#</td>
-</tr><tr>
-<td><a href=' https://theageofjacksonpodcast.com/history-of-history-1-the-age-of-jackson-by-arthur-m-schlesinger-jr-with-richard-aldous/' target='_blank'> The Age Of Jackson By Arthur M. Schlesinger Jr. With Richard Aldous (History Of History 1)</a><br>
-This podcast takes its name from the term popularized by Arthur M. Schlesinger Jr.’s Pulitzer Prize-winning The Age of Jackson (1945). Richard Aldous is interviewed</td>
-<td>https://theageofjacksonpodcast.com/full-episode-list/</td>
-<td>#AgeJackson #HCR5.21.20</td>
-</tr><tr>
-<td><a href=' https://www.thingsnotseenradio.com/shows/1902-baker' target='_blank'> The Bible and the Klan</a><br>
- Kelly J. Baker discusses her book, 'Gospel According to the Klan: The KKK’s Appeal to Protestant America 1915-1930.'</td>
-<td>https://feeds.megaphone.fm/SM8626686718</td>
-<td>#ThingsNotSeen  #KKK</td>
-</tr>
-</table>
+        </a><br>
+        Christopher Tomlins' book 'In the Matter of Nat Turner' is a unique speculation about the meaning and uses of
+        history itself.</td>
+      <td>https://newbooksnetwork.com/category/american-south/</td>
+      <td>#AmericanSouth #NewBooksNetwork #HCR4.2.2020</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://thedrunkenodyssey.com/2020/05/02/episode-418-a-discussion-of-joseph-campbells-the-hero-with-a-thousand-faces-with-vanessa-blakeslee/'
+          target='_blank'> Discussion of Joseph Campbell’s The Hero with a Thousand Faces</a><br>
+        Discussion on the classic of comparative mythology</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/megan-kate-nelson-the-three-cornered-war-the-union-the-confederacy-and-native-peoples-in-the-fight-for-the-west-scribner-2019/'
+          target='_blank'> The Union, the Confederacy, and Native Peoples in the Fight for the West</a><br>
+        In The 'Three-Cornered War', Megan Kate Nelson combines meticulous research in military records, letters and
+        diaries, oral histories, and photographs with novel-like prose to tell the story of the American Civil War
+        through the experiences of nine individuals</td>
+      <td>http://newbooksnetwork.com/category/native-american-studies/</td>
+      <td>#NativeAmericanStudies #NewBooksNetwork #HCR4.9.20</td>
+    </tr>
+    <tr>
+      <td><a href=' https://entitledopinions.stanford.edu/railroad-kai-carlson-wee' target='_blank'> On the railroad
+          with Kai Carlson-Wee </a><br>
+        This is one of a three-part series of episodes featuring a discussion of journey or 'road' literature ('The
+        Road', 'Lolita', 'Jesus' son), movies ('Badlands', 'Easy Rider', 'Thelma and Louise) and photography (e.g.
+        Robert Frank) </td>
+      <td>http://web.stanford.edu/dept/fren-ital/opinions/podcast/opinions.xml</td>
+      <td>#EntitledOpinions #Road</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.bbc.co.uk/programmes/p003hycq' target='_blank'> Chaucer</a><br>
+        Melvyn Bragg discusses Geoffrey Chaucer who immortalised the medieval pilgrimage and the diversity of 14th
+        century English society, in his Canterbury Tales.</td>
+      <td>https://www.bbc.co.uk/programmes/articles/598SVYJ2smP8qJlpH29y7Vj/podcasts</td>
+      <td>#InOurTime #Chaucer #CanterburyTales</td>
+    </tr>
+    <tr>
+      <td><a href=' http://jsr.fsu.edu/new-media/podcast/joshua-rothman.html' target='_blank'> Flush times in the age of
+          Jackson</a><br>
+        In this podcast, Art Remillard speaks with Joshua Rothman about his new book Flush Times and Fever Dreams: A
+        Story of Capitalism and Slavery in the Age of Jackson</td>
+      <td>http://feeds.feedburner.com/JSR-podcast</td>
+      <td>#JournalSouthernReligion #Jackson #JoshuaRothman</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' http://jsr.fsu.edu/new-media/podcast/perspectives.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+JSR-podcast+%28The+Journal+of+Southern+Religion+Podcast%29&utm_content=FeedBurner'
+          target='_blank'> Southern Evangelicals and the Culture of the New South</a><br>
+        Interviews with several authors on the subject</td>
+      <td>http://feeds.feedburner.com/JSR-podcast</td>
+      <td>#JournalSouthernReligion #Evangelicalism #HCR5.21.20</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' http://jsr.fsu.edu/new-media/podcast/tracy-thompson.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+JSR-podcast+%28The+Journal+of+Southern+Religion+Podcast%29&utm_content=FeedBurner'
+          target='_blank'> New Mind of the South</a><br>
+        In this podcast, Art Remillard talks with Tracy Thompson about her recent book, The New Mind of the South.
+        Thompson begins our conversation by explain how her book is similar to, and unique from, Wilber J. Cash’s 1941
+        classic, The Mind of the South.</td>
+      <td>http://feeds.feedburner.com/JSR-podcast</td>
+      <td>#JournalSouthernReligion #South</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://theageofjacksonpodcast.com/episode-6-eugene-genoveses-roll-jordan-roll-with-joshua-d-rothman-history-of-history-2/'
+          target='_blank'> Eugene Genovese's 'Roll, Jordan, Roll'</a><br>
+        When Roll, Jordan, Roll: The World the Slaves Made was published in 1974, the study of American slavery would
+        change forever. Written by Eugene D. Genovese, an often controversial figure, the book would become as
+        controversial as its author. This podcast discusses both the book and its author</td>
+      <td>https://theageofjacksonpodcast.com/full-episode-list/</td>
+      <td>#AgeJackson #JoshuaRothman #HCR4.2.2020</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://theageofjacksonpodcast.com/history-of-history-1-the-age-of-jackson-by-arthur-m-schlesinger-jr-with-richard-aldous/'
+          target='_blank'> The Age Of Jackson By Arthur M. Schlesinger Jr. With Richard Aldous (History Of History
+          1)</a><br>
+        This podcast takes its name from the term popularized by Arthur M. Schlesinger Jr.’s Pulitzer Prize-winning The
+        Age of Jackson (1945). Richard Aldous is interviewed</td>
+      <td>https://theageofjacksonpodcast.com/full-episode-list/</td>
+      <td>#AgeJackson #HCR5.21.20</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.thingsnotseenradio.com/shows/1902-baker' target='_blank'> The Bible and the Klan</a><br>
+        Kelly J. Baker discusses her book, 'Gospel According to the Klan: The KKK’s Appeal to Protestant America
+        1915-1930.'</td>
+      <td>https://feeds.megaphone.fm/SM8626686718</td>
+      <td>#ThingsNotSeen #KKK</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/david-swift-a-left-for-itself-left-wing-hobbyists-and-performative-radicalism-zero-books-2019/'
+          target='_blank'> Left-Wing Hobbyists and Performative Radicalism </a><br>
+        In his new book A Left for Itself:Left-Wing Hobbyists and Performative Radicalism (Zero Books, 2019), David
+        Swift argues that the left is dominated by what he terms hobbyists and performative radicals. An overwhelmingly
+        white, middle class, elite educated left is, according to Swift, searching for a past-time rather than fighting
+        for basic needs. Here is <a href="https://sugsaif.github.io/WH/Micro_Swift.html">a bit more commentary on this
+          episode</a>.</td>
+      <td></td>
+      <td>#NewBooksNetwork #DavidSwift #PoliticsPolemics</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.kut.org/post/scholar-denied-web-dubois-and-birth-modern-sociology' target='_blank'>
+          Scholar Denied</a><br>
+        John L. Hanson Jr. speaks with Dr. Aldon Morris, Leon Forrest Professor of Sociology and African American
+        Studies at Northwestern University, and author of ‘The Scholar Denied: W.E.B. Du Bois: The Birth of Modern
+        Sociology.’</td>
+      <td>https://feeds.podtrac.com/JzKciMU4lUEn</td>
+      <td>#InBlackAmerica #DuBois</td>
+    </tr>
+    <tr>
+      <td><a href=' https://newbooksnetwork.com/thomas-piketty-capital-and-ideology-harvard-up-2020/' target='_blank'>
+          Capital and Ideology</a><br>
+        Thomas Piketty discussed capital and progressive taxation</td>
+      <td>https://newbooksnetwork.com/category/sociology/</td>
+      <td>#NewBooksNetwork #Sociology #ThomasPiketty</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/gavriel-rosenfeld-the-fourth-reich-the-specter-of-nazism-from-world-war-ii-to-the-present-cambridge-up-2019/'
+          target='_blank'> The Specter of Nazism from World War II to the Present</a><br>
+        Gavriel Rosenfield discusses postwar nightmares of a future that never happened and explains what they tell us
+        about Western political, intellectual, and cultural life. He shows how postwar German history might have been
+        very different without the fear of the Fourth Reich as a mobilizing idea to combat the right-wing forces that
+        genuinely threatened the country’s democratic order.</td>
+      <td>https://newbooksnetwork.com/category/intellectual-history/</td>
+      <td>#NewBooksNetwork #IntellectualHistory #ultraright</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/david-a-bateman-disenfranchising-democracy-constructing-the-electorate-in-the-us-the-uk-and-france-cambridge-up-2020/'
+          target='_blank'> Constructing the Electorate in the United States, the United Kingdom, and France</a><br>
+        David A. Bateman’s fascinating new book opens with a puzzle. In 19th-century America, why was mass
+        democratization – abolishing property and tax qualifications – accompanied by the mass disenfranchisement of
+        black, male citizens</td>
+      <td>https://newbooksnetwork.com/category/political-science/</td>
+      <td>#NewBooksNetwork #PoliticalScience</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.podbean.com/site/EpisodeDownload/DIR31CF0D9XBKHX' target='_blank'> The Osage
+          Murders</a><br>
+        The "Osage Murders" were a series of murders of Osage people in Oklahoma that occurred in the early 1920's.
+        Their land was producing vasts amounts of valuable oil and the 'white folks' wanted in on the money that the
+        Osage were receiving</td>
+      <td>https://www.podbean.com/podcast-detail/tk8ki-51383/It%27s-About-Damn-Crime-Podcast</td>
+      <td>#ItsAboutCrime #Osage #NativeAmerican</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://booktribepodcast.libsyn.com/team-of-rivals-the-political-genius-of-abraham-lincoln-by-doris-kearns-goodwin'
+          target='_blank'> Team of Rivals</a><br>
+        The Political Genius of Abraham Lincoln by Doris Kearns Goodwin, This podcast uses a multi-host format, which I
+        like because it provides multiple perspective. This was recorded in front of live audience which adds something.
+      </td>
+      <td>https://booktribepodcast.libsyn.com/rss</td>
+      <td>#BookTribe #DorisKGoodwin</td>
+    </tr>
+    <tr>
+      <td><a href=' https://thesocietypages.org/officehours/2016/09/19/aldon-morris-on-the-scholar-denied/'
+          target='_blank'> Aldon Morris on The Scholar Denied</a><br>
+        "Northwestern University professor Aldon Morris discusses W.E.B. Du Bois and the status of his work in the
+        sociological canon. In this special hour-long episode, we explore the ongoing tension between social justice
+        activism and the scientific features of contemporary sociology, especially as it is experienced by many black
+        scholars today."</td>
+      <td>https://thesocietypages.org/officehours/feed/</td>
+      <td>#SocietyPages #DuBois</td>
+    </tr>
+    <tr>
+      <td><a href=' https://www.thingsnotseenradio.com/shows/1826-baker' target='_blank'> Sexism in higher education:
+          Dr. Kelly J. Baker</a><br>
+        Baker's recent book is Sexism Ed: Essays on Gender and Labor in Academia (Raven Books, 2018). In the book, Baker
+        examines issues such as gender inequity, precarious labor, misogyny, and structural oppression. </td>
+      <td>https://feeds.megaphone.fm/SM8626686718</td>
+      <td>#ThingsNotSeen #Sexism</td>
+    </tr>
+    <tr>
+      <td><a
+          href=' https://newbooksnetwork.com/carl-rollyson-the-life-of-william-faulkner-the-past-is-never-dead-1897-1934-uva-press-2020/'
+          target='_blank'> The Life of William Faulkner </a><br>
+        Carl Rollyson uses both an extensive range of archival collections and Faulkner’s wide-ranging literary output
+        to assess the author’s life and the development of his many famous works</td>
+      <td>https://newbooksnetwork.com/category/literary-studies/</td>
+      <td>#NewBooksNetwork #LiteraryStudies #Faulkner</td>
+    </tr>
+  </table>
 
-<script>
-
-
-function sortTable2(tableCol) {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
-  switching = true;
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[tableCol];
-      y = rows[i + 1].getElementsByTagName("TD")[tableCol];
-      //check if the two rows should switch place:
-      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-        //if so, mark as a switch and break the loop:
-        shouldSwitch = true;
-        break;
+  <script>
+    function sortTable2(tableCol) {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("myTable");
+      switching = true;
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[tableCol];
+          y = rows[i + 1].getElementsByTagName("TD")[tableCol];
+          //check if the two rows should switch place:
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            //if so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
       }
     }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
-</script>
+  </script>
 
-<script>
+  <script>
     function myFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[2];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
         }
+      }
     }
-</script>
+  </script>
 
 </body>
+
 </html>
