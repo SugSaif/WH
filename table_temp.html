@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <base target="_blank">
+    <style>
+        body {
+            font-family: sans-serif
+        }
+
+        table {
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        #myInput {
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 80%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <table id="myTable">
+        <tr>
+            <th></th>
+            <th>Hobbes</th>
+            <th>Locke</th>
+        </tr>
+
+
+        <tr>
+            <td>State of Nature</td>
+            <td>"solitary, poor, nasty, brutish, and short"</td>
+            <td>"free to order their actions, and dispose of their possessions and
+                themselves'; "a state of equality"; "obligation to love one another" <br> <br> VERSUS <br> <br> 'state
+                of war'
+            </td>
+        </tr>
+        <tr>
+            <td>Natural Law</td>
+            <td>1. Self-preservation <br> 2. golden rule <br> 3. contracts</td>
+            <td>Life, liberty and property</td>
+        </tr>
+        <tr>
+            <td>Social Contract</td>
+            <td>Relinquish all rights except self-preservation to absolute ruler (monarch or dictator)</td>
+            <td>Relinquish certain rights to legislature <br><br> emerges pre-government, but need government for
+                disputes/arbitration</td>
+        </tr>
+        
+    </table>
+
+    <script>
+        function sortTable2(tableCol) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("myTable");
+            switching = true;
+            /*Make a loop that will continue until
+            no switching has been done:*/
+            while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                    //start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /*Get the two elements you want to compare,
+                    one from current row and one from the next:*/
+                    x = rows[i].getElementsByTagName("TD")[tableCol];
+                    y = rows[i + 1].getElementsByTagName("TD")[tableCol];
+                    //check if the two rows should switch place:
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /*If a switch has been marked, make the switch
+                    and mark that a switch has been done:*/
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
